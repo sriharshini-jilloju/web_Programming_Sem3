@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Update Data</h1>
+        <form action="/api/update/<%= person._id %>" method="POST">
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="<%= person.name %>" placeholder="Name" required />
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" value="<%= person.age %>" placeholder="Age" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="<%= person.email %>" placeholder="Email" required />
+
+            <h3>Address</h3>
+            <label for="street">Street</label>
+            <input type="text" id="street" name="street" value="<%= person.address.street %>" placeholder="Street" required />
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" value="<%= person.address.city %>" placeholder="City" required />
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" value="<%= person.address.state %>" placeholder="State" required />
+
+            <label for="postalCode">Postal Code</label>
+            <input type="text" id="postalCode" name="postalCode" value="<%= person.address.postalCode %>" placeholder="Postal Code" required />
+
+            <h3>Contact</h3>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" value="<%= person.contact.phone %>" placeholder="Phone" required />
+
+            <label for="alternatePhone">Alternate Phone</label>
+            <input type="text" id="alternatePhone" name="alternatePhone" value="<%= person.contact.alternatePhone %>" placeholder="Alternate Phone" />
+
+            <h3>Preferences</h3>
+            <label for="color">Favorite Color</label>
+            <input type="text" id="color" name="color" value="<%= person.preferences.color %>" placeholder="Favorite Color" required />
+
+            <label for="hobbies">Hobbies</label>
+            <input type="text" id="hobbies" name="hobbies" value="<%= person.preferences.hobbies.join(', ') %>" placeholder="Hobbies" required />
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+</html>

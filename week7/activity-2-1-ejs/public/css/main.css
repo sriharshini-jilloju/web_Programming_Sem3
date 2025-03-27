@@ -1,0 +1,82 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+/* Styling the header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out the logo and title */
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background color */
+}
+
+/* Styling the logo */
+header img {
+  width: 50px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between the logo and title */
+}
+
+/* Styling the title */
+header h1 {
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Bold title */
+  color: #333; /* Dark text color */
+  font-family: "Arial", sans-serif; /* Font family */
+}
+
+/* Styling the navigation bar */
+nav {
+  background-color: #333; /* Dark background for the nav */
+  padding: 10px 0;
+}
+
+/* Styling the unordered list */
+#nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Centers the nav items */
+  align-items: center;
+  gap: 20px; /* Spacing between each list item */
+}
+
+/* Styling the navigation links */
+.nav-button {
+  text-decoration: none; /* Removes the underline from links */
+  color: #fff; /* White text color */
+  font-size: 16px; /* Adjust the font size */
+  font-weight: bold; /* Make text bold */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for the navigation links */
+.nav-button:hover {
+  background-color: #555; /* Darken the background on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack the logo and title vertically on mobile */
+    text-align: center; /* Center the text */
+  }
+  header img {
+    margin-right: 0; /* Remove margin on smaller screens */
+    margin-bottom: 10px; /* Add space between logo and title */
+  }
+  #nav {
+    flex-direction: column; /* Stack the links vertically on smaller screens */
+    align-items: flex-start; /* Align the items to the left */
+  }
+  .nav-button {
+    padding: 12px 25px; /* Increase padding for easier tapping on mobile */
+  }
+}

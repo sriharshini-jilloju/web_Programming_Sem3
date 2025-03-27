@@ -1,0 +1,70 @@
+[
+  {
+    "isbn": "9780743273565",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "description": "A novel about the American dream, set in the 1920s.",
+    "published_year": 1925,
+    "status": "BOOKED",
+    "cover_image": "/uploads/book1.jpeg",
+    "publication_year": "2001"
+  },
+  {
+    "isbn": "9780061120084",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "description": "A gripping, heart-wrenching, and wholly remarkable tale of a young girl in the racially charged South.",
+    "published_year": 1960,
+    "status": "BOOKED",
+    "cover_image": "/uploads/book2.jpeg"
+  },
+  {
+    "isbn": "9780451524935",
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Dystopian",
+    "description": "A totalitarian regime watches and controls every aspect of life in a dystopian society.",
+    "published_year": 1949,
+    "status": "AVAILABLE",
+    "cover_image": "/uploads/book3.jpeg"
+  },
+  {
+    "isbn": "9781503280786",
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "genre": "Adventure",
+    "description": "The story of a sailor's obsession with hunting a giant white whale.",
+    "published_year": 1851,
+    "status": "AVAILABLE",
+    "cover_image": "/uploads/book4.jpeg"
+  },
+  {
+    "isbn": "9781503290563",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Romance",
+    "description": "A classic tale of love, marriage, and social standing in 19th-century England.",
+    "published_year": 1813,
+    "status": "BOOKED",
+    "cover_image": "/uploads/book5.jpeg"
+  },
+  {
+    "isbn": "9780743273540",
+    "title": "Rich Dad Poor Dad",
+    "author": "Sri",
+    "genre": "Novel",
+    "description": "A Story of rich and Poor Dad",
+    "status": "BOOKED",
+    "cover_image": "/uploads/book6.jpeg"
+  },
+  {
+    "isbn": "3498567458990",
+    "title": "Think Like A Monk",
+    "author": "Jay Shetty",
+    "genre": "Novel",
+    "description": "A Novel",
+    "status": "BOOKED"
+  }
+]

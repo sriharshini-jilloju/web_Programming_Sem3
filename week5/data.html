@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <form id="upload-form" enctype="multipart/form-data">
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required />
+        <br><br>
+
+        <button type="submit">Upload</button>
+    </form>
+
+    <script>
+        document.getElementById("upload-form").addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const formData = new FormData();
+            const fileInput = document.getElementById("image");
+            formData.append("image", fileInput.files[0]);
+
+            fetch("http://127.0.0.1:8084/upload", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+            })
+            .catch(error => {
+                console.error(error);
+                alert("An error occurred while uploading the file.");
+            });
+        });
+    </script>
+</body>
+</html>

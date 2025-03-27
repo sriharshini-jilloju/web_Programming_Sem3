@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Module 1 - Activity 1</title>
+</head>
+
+<body>
+    <script>
+        // Function to fetch weather data
+        function loadData() {
+            fetch(
+                "https://api.openweathermap.org/data/2.5/weather?q=toronto&appid=675119a1dba203972be39f8f8a0932ba"
+            )
+                .then(function (response) {
+                    // Check if the response is OK
+                    if (!response.ok) {
+                        throw new Error(
+                            "Network response was not ok " + response.statusText
+                        );
+                    }
+                    return response.json(); // Parse the JSON response
+                })
+                .then(function (weatherData) {
+                    console.log(weatherData); // Log the weather data
+                })
+                .catch(function (error) {
+                    console.error(
+                        "There was a problem with the fetch operation:",
+                        error
+                    ); // Handle errors
+                });
+        }
+        loadData(); // Call the function to load data
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Fall Time",
+        "genre": "Drama",
+        "release_date": "7/16/1955",
+        "director": "Fawnia Eberz",
+        "rating": 6.8
+    },
+    {
+        "title": "Windows",
+        "genre": "Drama",
+        "release_date": "1/21/1916",
+        "director": "Rhetta Garvin",
+        "rating": 0.7
+    },
+    {
+        "title": "Puppet Masters, The",
+        "genre": "Horror|Sci-Fi",
+        "release_date": "11/13/1916",
+        "director": "Marwin Fortnum",
+        "rating": 8.0
+    },
+    {
+        "title": "Amazing Grace",
+        "genre": "Drama|Romance",
+        "release_date": "12/30/1989",
+        "director": "Ranee Syred",
+        "rating": 3.2
+    },
+    {
+        "title": "Pendulum",
+        "genre": "Drama",
+        "release_date": "5/14/1964",
+        "director": "Othella Kalinsky",
+        "rating": 8.3
+    },
+    {
+        "title": "Naughty Marietta",
+        "genre": "Drama|Musical",
+        "release_date": "6/8/1992",
+        "director": "Jonis Clowsley",
+        "rating": 1.1
+    },
+    {
+        "title": "RoboCop 3",
+        "genre": "Action|Crime|Drama|Sci-Fi|Thriller",
+        "release_date": "6/29/1903",
+        "director": "Cullin MacAvddy",
+        "rating": 7.7
+    },
+    {
+        "title": "Zeus and Roxanne",
+        "genre": "Children",
+        "release_date": "10/9/1923",
+        "director": "Patricia Oliveto",
+        "rating": 6.2
+    },
+    {
+        "title": "Hamlet (Gamlet)",
+        "genre": "Drama",
+        "release_date": "2/11/1992",
+        "director": "Gustav Bedbury",
+        "rating": 5.1
+    },
+    {
+        "title": "Days and Nights in the Forest (Aranyer Din Ratri)",
+        "genre": "Drama",
+        "release_date": "3/14/1904",
+        "director": "Ramon Bortoletti",
+        "rating": 7.6
+    }
+]

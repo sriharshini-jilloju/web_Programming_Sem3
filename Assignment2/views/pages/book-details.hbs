@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{book.title}}</title>
+    </head>
+    <body>
+        <div class="container">
+        <h1>{{book.title}}</h1>
+        
+        <img src="{{book.cover_image}}" height="200" width="150">
+        <p><strong>ISBN:</strong>{{book.isbn}}</p>
+        <p><strong>Author:</strong>{{book.author}}</p>
+        <p><strong>Genre:</strong>{{book.genre}}</p>
+        <p><strong>Description:</strong>{{book.description}}</p>
+        <p><strong>Published year:</strong>{{book.publication_year}}</p>
+        <p><strong>Status:</strong><span class="{{book.status}}"> {{book.status}}</span></p>
+
+        <a href="/books/{{book.isbn}}/edit" class="button">Edit Books</a><br><br><br>
+        </div>
+         <a href="/books" class="button">Back to List</a>
+    </body>
+</html>

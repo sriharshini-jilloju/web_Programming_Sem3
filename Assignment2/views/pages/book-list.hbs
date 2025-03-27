@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book List</title>
+    </head>
+    <body>
+        
+        <h1>Book List</h1>
+        <div class="container">
+        <form action ="/books" method="get" class="search-container">
+        <h3>Search Book By Titles</h3>
+            <input type ="text" name="q" placeholder="Search by title" value="{{query}}">
+            <button  type="submit">Search</button> 
+        </form>
+        </div>
+        <div class="container">
+        <table border ="1">
+            <thead>
+                <tr>
+                    <th>Cover Image</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each books}}
+                <tr>
+                    <td><img src="{{this.cover_image}}" width="50"></td>
+                    <td><a href="/books/{{this.isbn}}">{{this.title}}</a></td>
+                     <td>{{this.author}}</td>
+                      <td>{{this.genre}}</td>
+                       <td class="{{this.status}}">{{this.status}}</td>
+                </tr>
+                {{else}}
+                <tr>
+                    <td colspan="5">no books found</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table> 
+       <br><br>
+        <a href="/books/create" class="button">Add Books</a>
+        </div>
+    </body>
+</html>

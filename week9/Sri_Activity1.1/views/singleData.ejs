@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #555;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .edit-btn {
+            background: #007bff;
+        }
+        .back-btn {
+            background: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><%= person.name %></h1>
+        <p><strong>Age:</strong> <%= person.age %></p>
+        <p><strong>Email:</strong> <%= person.email %></p>
+        
+        <h3>Address</h3>
+        <p><strong>Street:</strong> <%= person.address.street %></p>
+        <p><strong>City:</strong> <%= person.address.city %></p>
+        <p><strong>State:</strong> <%= person.address.state %></p>
+        <p><strong>Postal Code:</strong> <%= person.address.postalCode %></p>
+
+        <h3>Contact</h3>
+        <p><strong>Phone:</strong> <%= person.contact.phone %></p>
+        <p><strong>Alternate Phone:</strong> <%= person.contact.alternatePhone %></p>
+
+        <h3>Preferences</h3>
+        <p><strong>Favorite Color:</strong> <%= person.preferences.color %></p>
+        <p><strong>Hobbies:</strong> <%= person.preferences.hobbies.join(", ") %></p>
+
+        <div class="btn-container">
+            <a href="/update/<%= person._id %>" class="edit-btn">Edit</a>
+            <a href="/data" class="back-btn">Back</a>
+        </div>
+    </div>
+</body>
+</html>

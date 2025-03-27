@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "course_name": "Honorable",
+    "course_code": "error: undefined method `first' for nil:NilClass",
+    "instructor_name": "Ray O'Docherty",
+    "start_date": "9/1/2022",
+    "credits": 1.1
+  },
+  {
+    "id": 2,
+    "course_name": "Mr",
+    "course_code": "error: undefined method `first' for nil:NilClass",
+    "instructor_name": "Miguela Langdale",
+    "start_date": "10/21/2022",
+    "credits": 3.6
+  },
+  {
+    "id": 3,
+    "course_name": "Dr",
+    "course_code": "error: undefined method `first' for nil:NilClass",
+    "instructor_name": "Bren Sellers",
+    "start_date": "11/1/2022",
+    "credits": 1.5
+  },
+  {
+    "id": 4,
+    "course_name": "Rev",
+    "course_code": "error: undefined method `first' for nil:NilClass",
+    "instructor_name": "Simmonds Edelman",
+    "start_date": "11/18/2022",
+    "credits": 2
+  },
+  {
+    "id": 5,
+    "course_name": "Ms",
+    "course_code": "error: undefined method `first' for nil:NilClass",
+    "instructor_name": "Yankee Greenier",
+    "start_date": "6/3/2022",
+    "credits": 3
+  },
+  {
+    "id": 6,
+    "course_name": "Web",
+    "course_code": "5315",
+    "instructor_name": "Sri",
+    "start_date": "2025-02-06",
+    "credits": 120
+  },
+  {
+    "id": 7,
+    "course_name": "java",
+    "course_code": "3099",
+    "instructor_name": "Bhav",
+    "start_date": "2025-02-04",
+    "credits": 457
+  },
+  {
+    "id": 8,
+    "course_name": "android",
+    "course_code": "4587",
+    "instructor_name": "Sai",
+    "start_date": "2025-02-06",
+    "credits": 56
+  }
+]

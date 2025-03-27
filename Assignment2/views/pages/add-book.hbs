@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Add New Book
+        </title>
+    </head>
+    <body>
+      
+        <h1>Add New Book</h1>
+          <div class="container">
+         {{#if error}}
+        <p style ="color:red;">{{error}}</p>
+        {{/if}}
+
+        <form action ="/api/books/create" method="post">
+           <label>ISBN:</label>
+           <input type="text" id="isbn" name="isbn"required><br>
+           <label>Title:</label>
+           <input type="text" id="title" name="title" required><br>
+           <label>Author:</label>
+           <input type="text" id="author" name="author" required><br>
+           <label>Genre:</label>
+           <input type="text" id="genre" name="genre"><br>
+           <label>Description:</label>
+           <textarea type="text" id="description" name="description"></textarea><br>
+           <label>Published year:</label>
+           <input type="text" id="publication_year" name="publication_year"><br>
+           <label>Status:</label>
+           <select id="status" name="status">
+              <option class="AVAILABLE" value="AVAILABLE">Available</option>
+              <option class="BOOKED" value="BOOKED">Booked</option>
+           </select>
+            <br>
+            <button class="button" type="submit">Add Book</button>
+        </form>
+        </div>
+    </body>
+</html>

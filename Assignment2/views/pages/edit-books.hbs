@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Books</title>
+    </head>
+    <body>
+       
+        <h1>Edit Books</h1>
+         <div class="container">
+
+        {{#if error}}
+        <p style ="color:red;">{{error}}</p>
+        {{/if}}
+
+        <form action="/api/books/{{book.isbn}}/edit?_method=PUT" method="post">
+        <input type="hidden" name="_method" value="PUT">
+           <label>Title:</label>
+           <input type="text" id="title" name="title" value="{{book.title}}" required><br>
+           <label>Author:</label>
+           <input type="text" id="author" name="author" value="{{book.author}}" required><br>
+           <label>Genre:</label>
+           <input type="text" id="genre" value="{{book.genre}}" name="genre"><br>
+           <label>Description:</label>
+           <textarea type="text" id="description" name="description">{{book.description}}</textarea><br>
+           <label>Published year:</label>
+           <input type="text" id="publication_year" name="publication_year" value="{{book.publication_year}}"><br>
+           <label>Status:</label>
+           <select id="status" name="status">
+              <option class="AVAILABLE" value="AVAILABLE" {{#if (eq book.status "AVAILABLE")}}selected{{/if}}>Available</option>
+              <option class="BOOKED" value="BOOKED" {{#if (eq book.status "BOOKED")}}selected{{/if}}>Booked</option>
+           </select>
+            <br>
+            <button class="button" type="submit">Save Changes</button>
+        </form>
+        </div>
+    </body>
+</html>

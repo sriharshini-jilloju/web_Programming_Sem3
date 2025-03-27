@@ -1,0 +1,12 @@
+<% courses.forEach(course => { %>
+    <div>
+        <h2><%= course.course_name %> - <%= course.course_code %></h2>
+        <p>Instructor: <%= course.instructor_name %></p>
+        <p>Start Date: <%= course.start_date %></p>
+        <p>Credits: <%= course.credits %></p>
+    </div>
+<% }) %>
+
+<a href="/add-data">
+    <button>Add New Course</button>
+</a>

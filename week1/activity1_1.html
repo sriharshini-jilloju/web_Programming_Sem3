@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Module 1 - Activity 1</title>
+</head>
+
+<body>
+    <script>
+        // Function to fetch weather data
+        function loadData() {
+            xmlhttp = new XMLHttpRequest(); // Create new request
+            xmlhttp.onreadystatechange = function () {
+                // Check if request is complete and successful
+                if (this.readyState == 4 && this.status == 200) {
+                    var weatherData = JSON.parse(this.responseText); // Parse JSON response
+                    console.log(weatherData); // Log data to console
+                }
+            };
+
+            // Open a GET request to the OpenWeatherMap API
+            xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=toronto&appid=675119a1dba203972be39f8f8a0932ba", false); 
+            xmlhttp.send(); // Send the request
+        }
+
+        loadData(); // Call function to load data
+    </script>
+</body>
+
+</html>

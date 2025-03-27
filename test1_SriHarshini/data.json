@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Abie Thecham",
+    "age": 12,
+    "breed": "Labrador Retriever",
+    "weight": 123.3,
+    "color": "Puce"
+  },
+  {
+    "id": 2,
+    "name": "Axe Ferroni",
+    "age": 11,
+    "breed": "Bulldog",
+    "weight": 83.5,
+    "color": "Blue"
+  },
+  {
+    "id": 3,
+    "name": "Frayda Fargie",
+    "age": 6,
+    "breed": "Bulldog",
+    "weight": 30.5,
+    "color": "Teal"
+  },
+  {
+    "id": 4,
+    "name": "Channa O'Hanlon",
+    "age": 7,
+    "breed": "Golden Retriever",
+    "weight": 137.9,
+    "color": "Crimson"
+  },
+  {
+    "id": 5,
+    "name": "Diane Bauldry",
+    "age": 15,
+    "breed": "Labrador Retriever",
+    "weight": 47.9,
+    "color": "Red"
+  },
+  {
+    "id": 6,
+    "name": "Viggy",
+    "age": 15,
+    "breed": "Golden Retriever",
+    "weight": 33.3,
+    "color": "white"
+  }
+]
